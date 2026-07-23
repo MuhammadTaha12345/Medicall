@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Clinic</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ass/css/style.css" />
+  </head>
+  <body>
+    <!-- header section started -->
+    <header class="site-header" id="siteHeader">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand p-0" href="#home">
+            <img
+              src="Images/26835.jpg"
+              alt="Medical Clinic logo"
+              height="48"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="home" class="hero text-white">
+        <div class="hero-slider">
+          <div
+            class="slide"
+            style="background-image: url(&quot;Images/13061.jpg&quot;)"
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(&quot;Images/empty-desk-doctors-office-with-computer-medical-instruments-nobody-cabinet-used-consultation-appointment-checkup-visit-where-physician-treats-patients-with-disease.jpg&quot;);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(&quot; ../Images/12061.jpg &quot;);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(&quot;Images/neurological-laboratory-with-nobody-it-modernly-equipped-prepared-experiments-development-examining-brain-functions-nervous-system-tomography-scan-scientific-research\ \(1\).jpg&quot;);
+            "
+          ></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+              <h1 class="display-4 fw-bold mb-3">
+                Beautiful and Reliable Medical Care
+              </h1>
+              <p class="lead mb-4">
+                We care for your health with experienced doctors, modern
+                diagnostics, and friendly service.
+              </p>
+              <a href="#contact" class="btn btn-light btn-lg"
+                >Book Appointment</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <!-- <div class="slider-controls">
+          <button class="slider-btn slider-prev" onclick="prevSlide()">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="slider-btn slider-next" onclick="nextSlide()">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div> -->
+
+        <!-- Slider Indicators -->
+        <!-- <div class="slider-indicators">
+          <span class="indicator active" onclick="goToSlide(0)"></span>
+          <span class="indicator" onclick="goToSlide(1)"></span>
+          <span class="indicator" onclick="goToSlide(2)"></span>
+          <span class="indicator" onclick="goToSlide(3)"></span>
+        </div> -->
+      </section>
+    </header>
+
+    <!-- main section started -->
+    <main>
+      <!-- Services Section -->
+      <section id="services" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-5 fw-bold">Our Services</h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">General Checkup</h5>
+                  <p class="card-text">
+                    Complete health check and a detailed medical assessment.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Laboratory Tests</h5>
+                  <p class="card-text">
+                    Blood, urine, and essential tests with fast and accurate
+                    results.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Family Medicine</h5>
+                  <p class="card-text">
+                    Quality care for patients of all ages.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-5">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <h2 class="fw-bold mb-4">Our Mission</h2>
+              <p class="mb-3">
+                We provide compassionate care, professional guidance, and
+                advanced treatment so everyone can live a healthier life.
+              </p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <i class="bi bi-check-circle"></i> Professional team of
+                  doctors
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-check-circle"></i> Comfortable clinic
+                  environment
+                </li>
+                <li class="list-group-item">
+                  <i class="bi bi-check-circle"></i> Fast and safe treatment
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="Images/friendly-team-doctors-shows-their-success-friendly-team-doctors-shows-their-success-concept-teamwork-114246831 (1).webp"
+                alt="Clinic Image"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Doctors Section -->
+      <section id="doctors" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-5">Our Expert Doctors</h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Fatima</h5>
+                  <p class="card-text text-muted">Family medicine specialist</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Ali</h5>
+                  <p class="card-text text-muted">Internal medicine expert</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 border-0 shadow-sm text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Sara</h5>
+                  <p class="card-text text-muted">
+                    Pediatric and neonatal care
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-5">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <h2 class="fw-bold mb-4">Contact Us</h2>
+              <p class="mb-3">
+                Fill the form below or call us to ask any questions or book a
+                visit.
+              </p>
+              <p>
+                <strong>Phone:</strong>
+                <a href="tel:03001234567">0300-1234567</a>
+              </p>
+              <p><strong>Address:</strong> Mary Space, Lahore</p>
+            </div>
+            <div class="col-lg-6">
+              <form class="contact-form">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Write your message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg w-100">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section started -->
+    <!-- <footer class="site-footer bg-dark text-white py-4 mt-5">
+      <div class="container text-center">
+        <p class="mb-0">
+          © 2026 Medical Clinic. Your health is our top priority.
+        </p>
+      </div>
+    </footer> -->
+
+    <footer class="site-footer bg-dark text-white pt-5">
+      <div class="container">
+        <div class="row gy-4 align-items-start">
+          <div class="col-md-4">
+            <a
+              class="d-inline-flex align-items-center mb-3 text-decoration-none"
+              href="#home"
+            >
+              <img
+                src="Images/26835.jpg"
+                alt="Medical Clinic logo"
+                height="60"
+                class="me-2"
+              />
+              <!-- <span class="h5 mb-0 fw-bold">Medical Clinic</span> -->
+            </a>
+            <p class="small text-white-50">
+              Compassionate care, experienced doctors, modern diagnostics.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <h6 class="fw-bold">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-white-50 text-decoration-none" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="text-white-50 text-decoration-none" href="#about"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a class="text-white-50 text-decoration-none" href="#services"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a class="text-white-50 text-decoration-none" href="#doctors"
+                  >Doctors</a
+                >
+              </li>
+              <li>
+                <a class="text-white-50 text-decoration-none" href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h6 class="fw-bold">Contact</h6>
+            <p class="mb-1">
+              <strong>Phone:</strong>
+              <a
+                class="text-white-50 text-decoration-none"
+                href="tel:03001234567"
+                >0300-1234567</a
+              >
+            </p>
+            <p class="mb-1">
+              <strong>Email:</strong>
+              <a
+                class="text-white-50 text-decoration-none"
+                href="mailto:info@medicalclinic.example"
+                >info@medicalclinic.example</a
+              >
+            </p>
+            <p class="mb-0"><strong>Address:</strong> Mary Space, Lahore</p>
+
+            <div class="mt-3">
+              <a href="#" class="text-white-50 me-3" aria-label="Facebook">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.07 5.66 21.13 10.43 21.98v-6.99H7.9v-2.92h2.53V9.88c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.88h2.74l-.44 2.92h-2.3V21.98C18.34 21.13 22 17.07 22 12.07z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-white-50 me-3" aria-label="Instagram">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.1A4.9 4.9 0 1 0 16.9 13 4.9 4.9 0 0 0 12 8.1zm6.5-.6a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-white-50" aria-label="LinkedIn">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4.98 3.5A2.5 2.5 0 1 0 4.98 8.5 2.5 2.5 0 0 0 4.98 3.5zM3 9h4v12H3zM9 9h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6v7h-4v-6.2c0-1.5 0-3.4-2.1-3.4-2.1 0-2.4 1.6-2.4 3.3V21H9z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between align-items-center small text-white-50"
+        >
+          <div class="mb-2 mb-sm-0">
+            © 2026 Medical Clinic. All rights reserved.
+          </div>
+          <div>
+            <a href="#" class="text-white-50 text-decoration-none me-3"
+              >Privacy</a
+            >
+            <a href="#" class="text-white-50 text-decoration-none">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Slider JS -->
+    <script src="ass/js/slider.js"></script>
+  </body>
+</html>
